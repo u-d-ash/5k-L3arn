@@ -6,7 +6,7 @@ class my_LinearRegressor:
         self.n_iters = n_iters
     
     def cost_function(self, X, Y):
-        return np.sqrt(np.sum(np.square(self.predict(X) - Y))/self.m)
+        return np.sum(np.square(self.predict(X) - Y))/self.m
     
     def fit(self, X, Y):
         
